@@ -1,47 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Bootstrap</title>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-    <section class="col-xs-12">
-
-<form>
-
-    <div class="form-group">
-      <label for="inputDollars">Lorem ipsum dolor sit amet, id ius commodo expetenda concludaturque, autem facilis efficiendi vix ea. Te has eripuit elaboraret quaerendum, et vel laudem definitionem. Mel nulla repudiandae an, mea officiis reprimique ut, no oblique recteque elaboraret vix. Augue perfecto perpetua no eam, duo enim sapientem gloriatur ei.</label>
-      <input class="form-control" type="text"
-        id="inputDollars" placeholder="$dollars">
-
-      <label for="inputDollars">Lorem ipsum dolor sit amet, id ius commodo expetenda concludaturque, autem facilis efficiendi vix ea. Te has eripuit elaboraret quaerendum, et vel laudem definitionem. Mel nulla repudiandae an, mea officiis reprimique ut, no oblique recteque elaboraret vix. Augue perfecto perpetua no eam, duo enim sapientem gloriatur ei.</label>
-      <input class="form-control" type="text"
-        id="inputDollars" placeholder="$dollars">
-
-      <label for="inputDollars">Lorem ipsum dolor sit amet, id ius commodo expetenda concludaturque, autem facilis efficiendi vix ea. Te has eripuit elaboraret quaerendum, et vel laudem definitionem. Mel nulla repudiandae an, mea officiis reprimique ut, no oblique recteque elaboraret vix. Augue perfecto perpetua no eam, duo enim sapientem gloriatur ei.</label>
-      <input class="form-control" type="text"
-        id="inputDollars" placeholder="$dollars">
-    </div>
-
-
+<form name="myForm" action="/action_page_post.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname"><br>
+Name: <input type="text" name="fname">s
+<input type="submit" value="Submit">
 </form>
 
-    </section>
-  </div><!-- row -->
-</div><!-- content container -->
+<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<p id="demo"></p>
 
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
 
 </body>
 </html>
