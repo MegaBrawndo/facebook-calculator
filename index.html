@@ -1,41 +1,263 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-</script>
+	<meta charset="UTF-8">
+
+	<title>Type Over Image</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/jquery-3.1.1.js"></script>
+  <script src="js/fubar.js"></script>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+
+
+
+
+  function sumTotal(form) {
+  alpha=eval(form.alpha.value);
+  beta=eval(form.beta.value);
+  charlie=eval(form.charlie.value);
+  one=eval(form.one.value);
+  two=eval(form.two.value);
+  three=eval(form.three.value);
+  four=eval(form.four.value);
+  five=eval(form.five.value);
+  six=eval(form.six.value);
+  seven=eval(form.seven.value);
+  eight=eval(form.eight.value);
+  nine=eval(form.nine.value);
+  ten=eval(form.ten.value);
+  delta=eval(form.delta.value);
+  echo=eval(form.echo.value);
+  foxtrot=eval(form.foxtrot.value);
+  total=(Math.pow(alpha, 0)+
+  alpha-1)+(beta)+(charlie)+(one)+(two)+(three)+(four)+(five)+(six)+(seven)+(eight)+(nine)+(ten)+(delta)+(echo)+(foxtrot);
+  form.sumtotal.value = total;
+  }
+
+  </script>
+
 </head>
+
 <body>
 
-<form name="myForm" action="/action_page_post.php"
-onsubmit="return validateForm()" method="post">
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname"><br>
-Name: <input type="text" name="fname">s
-<input type="submit" value="Submit">
+<div id="demo-top-bar">
+
+  <div id="demo-bar-inside">
+
+    <h2 id="demo-bar-badge">
+      <a href="/"></a>
+    </h2>
+
+    <div id="demo-bar-buttons">
+          </div>
+
+  </div>
+
+</div>
+	<div id="page-wrap">
+
+		<div class="image">
+
+		      <img src="images/images.jpg" alt="" />
+
+		      <h2>Liquid Assets:<br />Calculator</h2>
+
+		</div>
+  </div>
+
+
+  <form action="" method=post name=alphaform>
+<center>
+<table border=1 cellpadding=3 cellspacing=0 width="400">
+<tr>
+  <td align=center>
+    Wahka Wahka WOOO WOOO I need to Poo Poo =
+  </td>
+  <td align=center>
+    <input type=text name=alpha value="" size=6>
+  </td>
+</tr>
+<tr>
+  <td align=center>
+    Beta  =
+  </td>
+  <td align=center>
+    <input type=text name=beta value="" size=6>
+  </td>
+</tr>
+<tr>
+  <td align=center>
+    Charlie  =
+  </td>
+  <td align=center>
+    <input type=text name=charlie value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    One  =
+  </td>
+  <td align=center>
+    <input type=text name=one value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Two  =
+  </td>
+  <td align=center>
+    <input type=text name=two value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Three  =
+  </td>
+  <td align=center>
+    <input type=text name=three value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Four  =
+  </td>
+  <td align=center>
+    <input type=text name=four value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Five  =
+  </td>
+  <td align=center>
+    <input type=text name=five value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Six  =
+  </td>
+  <td align=center>
+    <input type=text name=six value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Seven  =
+  </td>
+  <td align=center>
+    <input type=text name=seven value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Eight  =
+  </td>
+  <td align=center>
+    <input type=text name=eight value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Nine  =
+  </td>
+  <td align=center>
+    <input type=text name=nine value="" size=6>
+  </td>
+</tr>
+
+<tr>
+  <td align=center>
+    Ten  =
+  </td>
+  <td align=center>
+    <input type=text name=ten value="" size=6>
+  </td>
+</tr>
+
+
+
+
+<form action="" method=post name=alphaform>
+<center>
+<table border=1 cellpadding=3 cellspacing=0 width="400">
+<tr>
+<td align=center>
+  Delta =
+</td>
+<td align=center>
+  <input type=text name=delta value="" size=6>
+</td>
+</tr>
+<tr>
+<td align=center>
+  Echo  =
+</td>
+<td align=center>
+  <input type=text name=echo value="" size=6>
+</td>
+</tr>
+<tr>
+<td align=center>
+  Foxtrot  =
+</td>
+<td align=center>
+  <input type=text name=foxtrot value="" size=6>
+</td>
+</tr>
+
+
+
+
+<tr>
+<td colspan=2 align=center>
+<br>
+<input type=button value="Calculat Total" onclick="sumTotal(this.form)">
+<p>
+<input name=sumtotal type=text value="" size=10>
+</td>
+<tr>
+</table>
+</center>
 </form>
 
-<p>Enter a number and click OK:</p>
 
-<input id="id1" type="number" min="100" max="300" required>
-<button onclick="myFunction()">OK</button>
 
-<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
 
-<p id="demo"></p>
+
+
+    <table width = "400">
+  <tr>
+    <th bgcolor="#FF0000">  Weekly Savings  </th>
+    <th bgcolor="#00FF00">  Monthly Savings  </th>
+    <th bgcolor="#0000FF">  Annuel Savings</th>
+  </tr>
+  <tr>
+    <td>  Bad Field 1  </td>
+    <td>  Bad Field 2  </td>
+    <td>  Bad Field 3  </td>
+  </tr>
+</table>
+
+
 
 
 
 </body>
+
 </html>

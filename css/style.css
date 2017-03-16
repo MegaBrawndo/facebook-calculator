@@ -1,0 +1,26 @@
+
+
+*					{ margin: 0; padding: ; }
+
+#page-wrap		    { width: 300px; margin: 20px auto; }
+
+.image              { position: relative; margin-bottom: 30px; width: 100%; }
+h2                  { position: absolute; top: 40px; left: 0; width: 100%; }
+h2 span             { color: black; font: bold 24px/45px Helvetica, Sans-Serif; letter-spacing: -0.5px;
+                      background: rgb(255, 255, 255); background: rgba(255, 255, 255, 0.7); padding: 6.5px; }
+h2 span.spacer      { padding: 0 2px; background: none; }
+
+body { /* Force <body> to fill screen */
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+.container1, .container2 {
+    height:40%;
+}​
+
+table, th, td {
+    border: 1px solid black;
+}
